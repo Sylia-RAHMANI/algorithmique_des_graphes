@@ -1,0 +1,23 @@
+pile_ou_file.o: pile_ou_file.c pile_ou_file.h
+conteneur_sommets.o: conteneur_sommets.c conteneur_sommets.h pile.h \
+ file.h pile_ou_file.h
+pile.o: pile.c pile.h
+file.o: file.c file.h
+graphe_parcours.o: graphe_parcours.c graphe_parcours.h graphe-4.h \
+ parcours.h conteneur_sommets.h file.h pile.h
+test-ordre_top.o: test-ordre_top.c graphe-4.h graphe_parcours.h
+test-distances.o: test-distances.c graphe-4.h graphe_parcours.h
+test-parcours.o: test-parcours.c graphe-4.h parcours.h \
+ conteneur_sommets.h file.h pile.h graphe_parcours.h
+parcours.o: parcours.c graphe-4.h parcours.h conteneur_sommets.h file.h \
+ pile.h
+graphe-4.o: graphe-4.c graphe-4.h parcours.h conteneur_sommets.h file.h \
+ pile.h
+test-cfc.o: test-cfc.c graphe-4.h graphe_parcours.h
+conteneur_sommets.o: conteneur_sommets.h
+pile.o: pile.h
+graphe_parcours.o: graphe_parcours.h graphe-4.h
+parcours.o: parcours.h graphe-4.h conteneur_sommets.h file.h pile.h
+file.o: file.h
+graphe-4.o: graphe-4.h
+pile_ou_file.o: pile_ou_file.h
